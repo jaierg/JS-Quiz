@@ -1,45 +1,38 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
 <body style="background-color: lightblue;">
-<title>Jaier's Quiz</title>
-<link href ="style.css" rel ="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-<script src = "main.js"></script>
+    <title>Jaier's Quiz</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script src="main.js"></script>
 
-</head>
+    </head>
+    <body>
+        <form id="quiz" name="quiz">
+            <p class="questions">What is the capital of Georgia?</p>
+            <input id="textbox" type="text" name="question1">
 
+            <p class="questions">How many days are in the month of December?</p>
+            <input type="radio" id="mc" name="question2" value="31">31<br>
+            <input type="radio" id="mc" name="question2" value="thirty one"> 28<br>
 
-<body>
-<h1>The Best Quiz You've Ever Taken!</h1>
+            <p class="questions">How many questions are on this quiz?</p>
 
+            <input type="radio" id="mc" name="question3" value="3">3<br>
+            <input type="radio" id="mc" name="question3" value="three">5 <br>
+            <input id="button" type="button" value="I'm finished!" onclick="check();">
 
-<form id = "quiz" name = "quiz">
+        </form>
 
+        <div id="after_submit">
+            <p id="number_correct"></p>
+            <p id="message"></p>
+            <img id="picture">
+        </div>
 
-<p class = "questions">What is the capital of Georgia?</p>
-<input id = "textbox" type = "text" name = "question1">
-
-<p class = "questions">How many days are in the month of December?</p>
-<input type = "radio" id = "mc" name = "question2" value = "31">31<br>
-<input type = "radio" id = "mc" name = "question2" value = "thirty one"> 28<br>
-
-<p class = "questions">How many questions are on this quiz?</p>
-
-<input type = "radio" id = "mc" name = "question3" value = "3">3<br>
-<input type = "radio" id = "mc" name = "question3" value = "three">5 <br>
-
-
-<input id = "button" type = "button" value = "I'm finished!" onclick = "check();">
-
-
-</form>
-
-<div id = "after_submit">
-<p id = "number_correct"></p>
-<p id = "message"></p>
-<img id = "picture">
-</div>
 </html>
 </body>
 </body>
